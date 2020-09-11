@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C50AC3462480DF82000CED82 /* DummyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C50AC3452480DF82000CED82 /* DummyObject.m */; };
+		C50AC3492480E2F6000CED82 /* DummySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = C50AC3482480E2F6000CED82 /* DummySingleton.m */; };
 		C5EF7E3A2480A79700167B05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EF7E392480A79700167B05 /* AppDelegate.m */; };
-		C5EF7E3D2480A79700167B05 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EF7E3C2480A79700167B05 /* SceneDelegate.m */; };
 		C5EF7E402480A79700167B05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EF7E3F2480A79700167B05 /* ViewController.m */; };
 		C5EF7E432480A79700167B05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5EF7E412480A79700167B05 /* Main.storyboard */; };
 		C5EF7E452480A79B00167B05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5EF7E442480A79B00167B05 /* Assets.xcassets */; };
 		C5EF7E482480A79B00167B05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5EF7E462480A79B00167B05 /* LaunchScreen.storyboard */; };
 		C5EF7E4B2480A79B00167B05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EF7E4A2480A79B00167B05 /* main.m */; };
+		C5F1A4EC2489F08300C0BD8C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5F1A4EB2489F08300C0BD8C /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C50AC3442480DF82000CED82 /* DummyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DummyObject.h; sourceTree = "<group>"; };
+		C50AC3452480DF82000CED82 /* DummyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DummyObject.m; sourceTree = "<group>"; };
+		C50AC3472480E2F6000CED82 /* DummySingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DummySingleton.h; sourceTree = "<group>"; };
+		C50AC3482480E2F6000CED82 /* DummySingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DummySingleton.m; sourceTree = "<group>"; };
 		C5EF7E352480A79700167B05 /* LifeCycleCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCycleCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5EF7E382480A79700167B05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5EF7E392480A79700167B05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C5EF7E3B2480A79700167B05 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		C5EF7E3C2480A79700167B05 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		C5EF7E3E2480A79700167B05 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C5EF7E3F2480A79700167B05 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C5EF7E422480A79700167B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +33,7 @@
 		C5EF7E472480A79B00167B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5EF7E492480A79B00167B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5EF7E4A2480A79B00167B05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5F1A4EB2489F08300C0BD8C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +68,16 @@
 			children = (
 				C5EF7E382480A79700167B05 /* AppDelegate.h */,
 				C5EF7E392480A79700167B05 /* AppDelegate.m */,
-				C5EF7E3B2480A79700167B05 /* SceneDelegate.h */,
-				C5EF7E3C2480A79700167B05 /* SceneDelegate.m */,
 				C5EF7E3E2480A79700167B05 /* ViewController.h */,
 				C5EF7E3F2480A79700167B05 /* ViewController.m */,
+				C50AC3442480DF82000CED82 /* DummyObject.h */,
+				C50AC3452480DF82000CED82 /* DummyObject.m */,
+				C50AC3472480E2F6000CED82 /* DummySingleton.h */,
+				C50AC3482480E2F6000CED82 /* DummySingleton.m */,
 				C5EF7E412480A79700167B05 /* Main.storyboard */,
 				C5EF7E442480A79B00167B05 /* Assets.xcassets */,
 				C5EF7E462480A79B00167B05 /* LaunchScreen.storyboard */,
+				C5F1A4EB2489F08300C0BD8C /* Settings.bundle */,
 				C5EF7E492480A79B00167B05 /* Info.plist */,
 				C5EF7E4A2480A79B00167B05 /* main.m */,
 			);
@@ -133,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5F1A4EC2489F08300C0BD8C /* Settings.bundle in Resources */,
 				C5EF7E482480A79B00167B05 /* LaunchScreen.storyboard in Resources */,
 				C5EF7E452480A79B00167B05 /* Assets.xcassets in Resources */,
 				C5EF7E432480A79700167B05 /* Main.storyboard in Resources */,
@@ -146,10 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C50AC3492480E2F6000CED82 /* DummySingleton.m in Sources */,
 				C5EF7E402480A79700167B05 /* ViewController.m in Sources */,
 				C5EF7E3A2480A79700167B05 /* AppDelegate.m in Sources */,
 				C5EF7E4B2480A79B00167B05 /* main.m in Sources */,
-				C5EF7E3D2480A79700167B05 /* SceneDelegate.m in Sources */,
+				C50AC3462480DF82000CED82 /* DummyObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "DummyObject.h"
 
-@interface AppDelegate ()
+@interface AppDelegate (){
+    DummyObject *_dummyObject;
+}
 
 @end
 
@@ -17,24 +20,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSLog(@"iOS %.1f %s thread %@",[UIDevice currentDevice].systemVersion.floatValue,__PRETTY_FUNCTION__,[NSThread currentThread]);
+    // if iOS14
+    // do some check
+    _dummyObject = [DummyObject new];
+    [NSUserDefaults.standardUserDefaults setBool:NO forKey:@"enabled_preference"];
     return YES;
 }
 
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    NSLog(@"iOS %.1f %s start thread %@",[UIDevice currentDevice].systemVersion.floatValue,__PRETTY_FUNCTION__,[NSThread currentThread]);
+    NSLog(@"iOS %.1f %s end thread %@",[UIDevice currentDevice].systemVersion.floatValue,__PRETTY_FUNCTION__,[NSThread currentThread]);
 }
 
+- (void)applicationWillResignActive:(UIApplication *)application {
+    NSLog(@"iOS %.1f %s thread %@",[UIDevice currentDevice].systemVersion.floatValue,__PRETTY_FUNCTION__,[NSThread currentThread]);
+}
 
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    NSLog(@"iOS %.1f %s thread %@",[UIDevice currentDevice].systemVersion.floatValue,__PRETTY_FUNCTION__,[NSThread currentThread]);
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    NSLog(@"iOS %.1f %s thread %@",[UIDevice currentDevice].systemVersion.floatValue,__PRETTY_FUNCTION__,[NSThread currentThread]);
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    NSLog(@"iOS %.1f %s thread %@",[UIDevice currentDevice].systemVersion.floatValue,__PRETTY_FUNCTION__,[NSThread currentThread]);
 }
 
 
